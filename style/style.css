@@ -129,11 +129,13 @@ table {
 }
 /* 顏色 */
 :root {
+  --primary-500: #477a11;
   --primary-400: #57a203;
   --primary-300: #c0fa73;
   --Primary-200: #e8fec5;
   --primary-100: #f5fee7;
   --neutral-900: #212529;
+  --neutral-700: #495057;
   --neutral-600: #6c757d;
   --neutral-500: #adb5bd;
   --neutral-300: #dee2e6;
@@ -454,8 +456,15 @@ h6 {
   background-color: var(--neutral-900);
   color: var(--neutral-White);
 }
+.btn-dark:hover {
+  background-color: var(--neutral-700);
+}
 .btn-light {
   border: 1px solid var(--neutral-900);
+}
+.btn-light:hover {
+  background-color: var(--neutral-900);
+  color: var(--neutral-White);
 }
 .footer2 {
   text-align: center;
@@ -463,4 +472,10 @@ h6 {
 }
 .text-line-through {
   text-decoration: line-through;
+}
+.nav-bar a:hover {
+  color: var(--neutral-600);
+}
+.breadcrumb-item a:hover {
+  color: var(--primary-500);
 }
